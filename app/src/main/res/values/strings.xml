@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Screens</string>
+    <string name="mainText">Nu är du på MainActivity</string>
+    <string name="buttonText_main">Start Second Activity</string>
+    <string name="secondText">Close Second Activity</string>
 </resources>
