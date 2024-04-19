@@ -1,9 +1,8 @@
 
 # Rapport
 Skapade knapp som startar SecondActivity.java, och intent i MainActivity.java.
-Intentet som skickar över är texten i intent.putExtra();.
-
-``
+Intenten hämtas från sträng-filen.
+Mainactivity:``
 Button button = findViewById(R.id.start_second_activity);
 button.setOnClickListener(new View.OnClickListener(){
     @Override
@@ -13,6 +12,14 @@ button.setOnClickListener(new View.OnClickListener(){
     startActivity(intent);
 }
 });
+``Strings.xml:
+``
+<resources>
+<string name="app_name">Screens</string>
+<string name="mainText">Nu är du på MainActivity</string>
+<string name="buttonText_main">Start Second Activity</string>
+<string name="secondText">Close Second Activity</string>
+</resources>
 ``
 Intentet hämtas i SecondActivity.java (OM det har ett värde som inte är null visas strängen)
 ``
